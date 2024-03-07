@@ -12,7 +12,7 @@ endif()
 project ("AST_Interpretor")
 
 # Add source to this project's executable.
-add_executable (AST_Interpretor "main.cpp")
+add_executable (AST_Interpretor "main.cpp" "utils/tokens_types.h" "Lexer/Lexer.h" "utils/Token.h" "utils/Token.cpp" "Lexer/Lexer.cpp")
 
 set_property(TARGET AST_Interpretor PROPERTY CXX_STANDARD 20)
 
