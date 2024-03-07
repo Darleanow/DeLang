@@ -1,0 +1,52 @@
+enum class TokenTypes {
+    PROGRAM = 0,
+    STATEMENT = 1,
+    VAR_DECL = 2,
+    TYPE_DECL = 3,
+    EXPRESSION = 4,
+    TYPE = 5,
+    NUMBER = 6,
+    INT = 7,
+    FLOAT = 8,
+    STRING = 9,
+    BOOLEAN = 10,
+    ARRAY = 11, // legacy ?
+    CONDITION = 12,
+    ELSE_IF_CONDITION = 13,
+    ELSE_CONDITION = 14,
+    LOOP = 15,
+    RANGE = 16,
+    FOR_LOOP = 17,
+    WHILE_LOOP = 18,
+    OPERATION = 19,
+    OPERATOR = 20,
+    FUNCTION_CALL = 21,
+    FUNCTION_NAME = 22,
+    PRINT_FUNCTION = 23,
+    COMMENT = 24,
+    IDENTIFIER = 25,
+    GREATER_THAN = 26,
+    LESS_THAN = 27,
+    GREATER_THAN_OR_EQUAL = 28,
+    LESS_THAN_OR_EQUAL = 29,
+    NULL_ID = 30,
+    AND = 31,
+    OR = 32,
+    ARRAY_START = 36,
+    ARRAY_END = 37,
+    BLOCK_START = 38,
+    BLOCK_END = 39,
+    ARITHMETIC_OPERATOR = 40,
+    RELATIONAL_OPERATOR = 41,
+    LOGICAL_OPERATOR = 42,
+    RANGE_OPERATOR = 43,
+    ASSIGNMENT_OPERATOR = 44,
+    PAREN_OPEN = 45,
+    PAREN_CLOSE = 46,
+
+
+
+    NOT = 33, // Consider implementation as per TODO
+    XOR = 34, // Consider implementation as per TODO
+    NAND = 35, // Consider implementation as per TODO
+};
