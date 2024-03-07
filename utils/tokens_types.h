@@ -1,38 +1,52 @@
-enum class TokenTypes
-{
-	PROGRAM = 0, // A program is a list of statements
-	STATEMENT = 1, // A statement is a variable decl, a typed variable decl, a condition, a loop, an operation, a function call, or a comment
-	VAR_DECL = 2, // A var decl is an identifier (is), and an expression
-	TYPE_DECL = 3, // A type decl is a type, ":", an identifier, and an expression
+enum class TokenTypes {
+    PROGRAM = 0,
+    STATEMENT = 1,
+    VAR_DECL = 2,
+    TYPE_DECL = 3,
+    EXPRESSION = 4,
+    TYPE = 5,
+    NUMBER = 6,
+    INT = 7,
+    FLOAT = 8,
+    STRING = 9,
+    BOOLEAN = 10,
+    ARRAY = 11, // legacy ?
+    CONDITION = 12,
+    ELSE_IF_CONDITION = 13,
+    ELSE_CONDITION = 14,
+    LOOP = 15,
+    RANGE = 16,
+    FOR_LOOP = 17,
+    WHILE_LOOP = 18,
+    OPERATION = 19,
+    OPERATOR = 20,
+    FUNCTION_CALL = 21,
+    FUNCTION_NAME = 22,
+    PRINT_FUNCTION = 23,
+    COMMENT = 24,
+    IDENTIFIER = 25,
+    GREATER_THAN = 26,
+    LESS_THAN = 27,
+    GREATER_THAN_OR_EQUAL = 28,
+    LESS_THAN_OR_EQUAL = 29,
+    NULL_ID = 30,
+    AND = 31,
+    OR = 32,
+    ARRAY_START = 36,
+    ARRAY_END = 37,
+    BLOCK_START = 38,
+    BLOCK_END = 39,
+    ARITHMETIC_OPERATOR = 40,
+    RELATIONAL_OPERATOR = 41,
+    LOGICAL_OPERATOR = 42,
+    RANGE_OPERATOR = 43,
+    ASSIGNMENT_OPERATOR = 44,
+    PAREN_OPEN = 45,
+    PAREN_CLOSE = 46,
 
-	EXPRESSION = 4, // Can be a literal, an identifier, an operation, or a function call
 
-	TYPE = 5, // A type can be string, int, float, boolean, or array
-	NUMBER = 6, // A number is a int or a float
-	INT = 7,
-	FLOAT = 8,
-	STRING = 9, // A string is a list of chars between "
-	BOOLEAN = 10, // A boolean is true or false
-	ARRAY = 11, // An array is a list of expressions in between brackets
 
-	CONDITION = 12, // Contains an expression, a statement, might have an else if condition, might have an else condition
-	ELSE_IF_CONDITION = 13, // Contains an expression, which is a statement
-	ELSE_CONDITION = 14, // Contains a statement
-
-	LOOP = 15, // Can be a while or a for loop
-	RANGE = 16, // Is number1..number2
-	FOR_LOOP = 17, // Contains "repeat" + an identifier + -> + a range, and statements
-	WHILE_LOOP = 18, // Contains "while", an expression, and statements
-
-	OPERATION = 19, // Contains an expression, an operator and an expression
-	OPERATOR = 20, // Can be +,-,*,/, ==, <, >, <=, >=, and, or //TODO: Implement NOR,XOR,NAND
-
-	FUNCTION_CALL = 21, // Contains a fonction name, an expression, with parameters (expression)
-	FONCTION_NAME = 22, // Examples lengthOf, maxOf, sumOf
-
-	PRINT_FUNCTION = 23, // "say" expression
-
-	COMMENT = 24, // "//" , TODO: /* * */ for blocks
-
-	IDENTIFIER = 25, // Matches any char, any number ([a-zA-Z_][a-zA-Z0-9_]*)
+    NOT = 33, // Consider implementation as per TODO
+    XOR = 34, // Consider implementation as per TODO
+    NAND = 35, // Consider implementation as per TODO
 };
